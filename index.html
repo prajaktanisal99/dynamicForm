@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Form Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <!-- Change from div to textarea for dynamic JSON editing -->
+      <div class="firstHalf">
+        <button id="reload">Reload</button>
+        <textarea
+          id="jsonDisplay"
+          placeholder="Edit JSON here"
+          rows="20"
+          cols="50"
+        ></textarea>
+      </div>
+      <div id="dynamicForm"></div>
+    </div>
+
+    <script src="./form-data.js"></script>
+    <script type="module" src="./script.js" defer></script>
+  </body>
+</html>

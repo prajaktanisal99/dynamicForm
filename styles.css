@@ -1,0 +1,127 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h2 {
+  color: #444;
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin: auto;
+}
+
+/* JSON Display Styling */
+#jsonDisplay {
+  flex: 1 1 40%;
+  background: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  overflow: auto;
+  /* max-height: 500px; */
+  font-family: monospace;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#jsonDisplay pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Form Styling */
+#dynamicForm {
+  flex: 1 1 50%;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input,
+select,
+textarea,
+button {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+/* Required Field Styling */
+.required {
+  color: red;
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #jsonDisplay,
+  #dynamicForm {
+    flex: 1 1 auto;
+  }
+}
+
+.firstHalf {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
